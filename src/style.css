@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* Base theme variables are defined in themes.js */
+
+/* Define the base theme (Cotton Candy) */
+@theme {
+  /* Cotton Candy Calm (Default) */
+  --bg-color: #f8afcb;
+  --accent-color: #fad4e0;
+  --highlight-color: #f48da2;
+  --container-color: #ffffff;
+  --text-color: #2e2e2e;
+  --input-border: #fad4e0;
+  --button-hover: #f48da2;
+  --shadow-color: rgba(248, 175, 203, 0.3);
+  --input-bg: #ffffff;
+}
+
+/* Dark Mode using the custom-variant for Tailwind v4 */
+@custom-variant dark (&:where([data-theme-mode=dark], [data-theme-mode=dark] *));
